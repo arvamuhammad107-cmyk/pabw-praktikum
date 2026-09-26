@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Koleksi Kopi Favorit Saya</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>Koleksi Kopi Favorit Saya</h1>
+
+        <nav aria-label="Navigasi utama">
+            <ul>
+                <li><a href="#daftar-kopi">Daftar Kopi</a></li>
+                <li><a href="#tambah-kopi">Tambah Kopi</a></li>
+                <li><a href="#tentang-saya">Tentang Saya</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="daftar-kopi">
+            <h2>Daftar Kopi</h2>
+
+            <p>
+                Berikut adalah beberapa kopi yang pernah saya coba
+                beserta jenis, asal, dan rating yang saya berikan.
+            </p>
+
+            <table>
+                <caption>Koleksi Kopi Favorit Saya</caption>
+
+                <thead>
+                    <tr>
+                        <th scope="col">Nama Kopi</th>
+                        <th scope="col">Jenis Kopi</th>
+                        <th scope="col">Asal</th>
+                        <th scope="col">Rating</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <th scope="row">Kopi Arabika</th>
+                        <td>Arabika</td>
+                        <td>Gayo</td>
+                        <td>5/5</td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">Kopi Robusta</th>
+                        <td>Robusta</td>
+                        <td>Temanggung</td>
+                        <td>4/5</td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">Kopi Toraja</th>
+                        <td>Arabika</td>
+                        <td>Toraja</td>
+                        <td>5/5</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <figure>
+    <img
+        src="Kopi-Pahit-from-Yogyakarta-Indonesia.jpeg"
+        alt="Secangkir kopi yang disajikan di atas meja"
+        width="640"
+        height="360"
+        loading="lazy"
+    >
+    <figcaption>Secangkir kopi favorit saya.</figcaption>
+</figure>
+
+        </section>
+
+
+        <section id="tambah-kopi">
+            <h2>Tambah Kopi</h2>
+
+            <p>
+                Gunakan form berikut untuk menambahkan kopi ke dalam koleksi.
+            </p>
+
+            <form action="/simpan" method="post">
+
+                <p>
+                    <label for="nama-kopi">Nama Kopi</label>
+                    <input
+                        type="text"
+                        id="nama-kopi"
+                        name="nama-kopi"
+                        required
+                    >
+                </p>
+
+                <p>
+                    <label for="jenis-kopi">Jenis Kopi</label>
+                    <input
+                        type="text"
+                        id="jenis-kopi"
+                        name="jenis-kopi"
+                        required
+                    >
+                </p>
+
+                <p>
+                    <label for="rating">Rating</label>
+                    <input
+                        type="number"
+                        id="rating"
+                        name="rating"
+                        min="1"
+                        max="5"
+                        required
+                    >
+                </p>
+
+                <button type="submit">Simpan</button>
+
+            </form>
+        </section>
+
+
+        <section id="tentang-saya">
+            <h2>Tentang Saya</h2>
+
+            <p>
+                Saya adalah mahasiswa yang tertarik mencoba berbagai jenis
+                kopi dan ingin mencatat kopi-kopi yang pernah saya coba.
+            </p>
+        </section>
+
+    </main>
+
+
+    <footer>
+        <p>Nama: M. Arva Rafi Agatha Sukur, NIM: 25523146 </p>
+    </footer>
+
+</body>
+</html>
