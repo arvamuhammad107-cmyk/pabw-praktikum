@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Koleksi Kopi Favorit Saya</title>
+    
+    <link rel="stylesheet" href="tokens.css">
+    <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="layout.css">
+    <link rel="stylesheet" href="komponen.css">
+    <link rel="stylesheet" href="tema.css">
+    <link rel="stylesheet" href="responsif.css">
+</head>
+
+<body class="page">
+
+    <header class="header">
+        <div class="container header-inner">
+            <h1>Koleksi Kopi Favorit Saya</h1>
+
+            <nav class="nav" aria-label="Navigasi utama">
+                <ul class="nav-list">
+                    <li><a href="#daftar-kopi">Daftar Kopi</a></li>
+                    <li><a href="#tambah-kopi">Tambah Kopi</a></li>
+                    <li><a href="#tentang-saya">Tentang Saya</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <div class="container">
+
+            <section id="daftar-kopi" class="section">
+                <div class="section-header">
+                    <h2>Daftar Kopi</h2>
+                </div>
+
+                <p>
+                    Berikut adalah beberapa kopi yang pernah saya coba
+                    beserta jenis, asal, dan rating yang saya berikan.
+                </p>
+
+                <div class="card">
+                    <div class="table-wrap">
+                        <table>
+                            <caption>Koleksi Kopi Favorit Saya</caption>
+
+                            <thead>
+                                <tr>
+                                    <th scope="col">Nama Kopi</th>
+                                    <th scope="col">Jenis Kopi</th>
+                                    <th scope="col">Asal</th>
+                                    <th scope="col">Rating</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Kopi Arabika</th>
+                                    <td>Arabika</td>
+                                    <td>Gayo</td>
+                                    <td>5/5</td>
+                                </tr>
+
+                                <tr>
+                                    <th scope="row">Kopi Robusta</th>
+                                    <td>Robusta</td>
+                                    <td>Temanggung</td>
+                                    <td>4/5</td>
+                                </tr>
+
+                                <tr>
+                                    <th scope="row">Kopi Toraja</th>
+                                    <td>Arabika</td>
+                                    <td>Toraja</td>
+                                    <td>5/5</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <figure class="card">
+                    <img
+                        src="Kopi-Pahit-from-Yogyakarta-Indonesia.jpeg"
+                        alt="Secangkir kopi yang disajikan di atas meja"
+                        width="640"
+                        height="360"
+                        loading="lazy"
+                    >
+                    <figcaption>Secangkir kopi favorit saya.</figcaption>
+                </figure>
+            </section>
+
+            <section id="tambah-kopi" class="section">
+                <div class="section-header">
+                    <h2>Tambah Kopi</h2>
+                </div>
+
+                <p>
+                    Gunakan form berikut untuk menambahkan kopi ke dalam koleksi.
+                </p>
+
+                <form class="card" action="/simpan" method="post">
+                    <div class="form-group">
+                        <label class="form-label" for="nama-kopi">Nama Kopi</label>
+                        <input
+                            class="form-control"
+                            type="text"
+                            id="nama-kopi"
+                            name="nama-kopi"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label" for="jenis-kopi">Jenis Kopi</label>
+                        <input
+                            class="form-control"
+                            type="text"
+                            id="jenis-kopi"
+                            name="jenis-kopi"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label" for="rating">Rating</label>
+                        <input
+                            class="form-control"
+                            type="number"
+                            id="rating"
+                            name="rating"
+                            min="1"
+                            max="5"
+                            required
+                        >
+                    </div>
+
+                    <button class="btn btn-primary" type="submit">Simpan</button>
+                </form>
+            </section>
+
+            <section id="tentang-saya" class="section">
+                <div class="section-header">
+                    <h2>Tentang Saya</h2>
+                </div>
+
+                <p>
+                    Saya adalah mahasiswa yang tertarik mencoba berbagai jenis
+                    kopi dan ingin mencatat kopi-kopi yang pernah saya coba.
+                </p>
+            </section>
+
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>Nama: M. Arva Rafi Agatha Sukur, NIM: 25523146</p>
+        </div>
+    </footer>
+
+</body>
+</html>
