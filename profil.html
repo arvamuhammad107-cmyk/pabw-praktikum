@@ -1,0 +1,143 @@
+```html
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Koleksi Kopi Favorit Saya</title>
+
+    <link rel="stylesheet" href="tokens.css">
+    <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="layout.css">
+    <link rel="stylesheet" href="komponen.css">
+    <link rel="stylesheet" href="tema.css">
+
+    <script type="module" src="js/app.js"></script>
+</head>
+
+<body class="page">
+
+    <header class="header">
+        <div class="container header-inner">
+            <h1>Koleksi Kopi Favorit Saya</h1>
+
+            <nav class="nav" aria-label="Navigasi utama">
+                <ul class="nav-list">
+                    <li><a href="#daftar-kopi">Daftar Kopi</a></li>
+                    <li><a href="#tambah-kopi">Tambah Kopi</a></li>
+                    <li><a href="#tentang-saya">Tentang Saya</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <div class="container">
+
+            <section id="daftar-kopi" class="section">
+                <div class="section-header">
+                    <h2>Daftar Kopi</h2>
+                </div>
+
+                <p>
+                    Berikut adalah koleksi kopi favorit saya.
+                    Gunakan tombol untuk memfilter jenis kopi.
+                </p>
+
+                <div id="filter-kopi" class="filter-group">
+                    <button type="button" data-filter="semua"
+                        aria-pressed="true">Semua</button>
+
+                    <button type="button" data-filter="Arabika"
+                        aria-pressed="false">Arabika</button>
+
+                    <button type="button" data-filter="Robusta"
+                        aria-pressed="false">Robusta</button>
+                </div>
+
+                <div id="daftar-kopi-container" class="grid-2"></div>
+
+                <p id="pesan-kosong" hidden>
+                    Tidak ada kopi dalam kategori ini.
+                </p>
+            </section>
+
+            <section id="tambah-kopi" class="section">
+                <div class="section-header">
+                    <h2>Tambah Kopi</h2>
+                </div>
+
+                <p>Isi form berikut untuk mencoba menambahkan kopi.</p>
+
+                <form id="form-kopi" class="card" novalidate>
+                    <div class="form-group">
+                        <label class="form-label" for="nama-kopi">
+                            Nama Kopi
+                        </label>
+                        <input class="form-control" type="text"
+                            id="nama-kopi" name="nama-kopi" required>
+                        <small id="error-nama" class="error-message"></small>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label" for="jenis-kopi">
+                            Jenis Kopi
+                        </label>
+                        <select class="form-control" id="jenis-kopi"
+                            name="jenis-kopi" required>
+                            <option value="">Pilih jenis kopi</option>
+                            <option value="Arabika">Arabika</option>
+                            <option value="Robusta">Robusta</option>
+                        </select>
+                        <small id="error-jenis" class="error-message"></small>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label" for="asal-kopi">
+                            Asal Kopi
+                        </label>
+                        <input class="form-control" type="text"
+                            id="asal-kopi" name="asal-kopi" required>
+                        <small id="error-asal" class="error-message"></small>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label" for="rating">
+                            Rating (1–5)
+                        </label>
+                        <input class="form-control" type="number"
+                            id="rating" name="rating" min="1" max="5"
+                            step="1" required>
+                        <small id="error-rating" class="error-message"></small>
+                    </div>
+
+                    <button class="btn btn-primary" id="tombol-simpan"
+                        type="submit" disabled>
+                        Simpan Kopi
+                    </button>
+                </form>
+            </section>
+
+            <section id="tentang-saya" class="section">
+                <div class="section-header">
+                    <h2>Tentang Saya</h2>
+                </div>
+
+                <p>
+                    Saya adalah mahasiswa yang tertarik mencoba berbagai
+                    jenis kopi dan mencatat kopi yang pernah dicoba.
+                </p>
+            </section>
+
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>Nama: M. Arva Rafi Agatha Sukur, NIM: 25523146</p>
+        </div>
+    </footer>
+
+</body>
+</html>
+```
